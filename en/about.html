@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About — Blagodarya.BG</title>
-<meta name="description" content="Фондация Благодаря.БГ — духовни и културни ценности, подкрепа за деца в неравностойно положение. От 2008 г.">
+<meta name="description" content="Blagodarya.BG Foundation — spiritual and cultural heritage, support for children in need. Since 2008.">
 <style>
 :root{--cream:#faf7f0;--ink:#33291e;--mut:#7a6f61;--gold:#b3872e;--gold2:#8f6a1e;--deep:#3d2f1f;--line:#e8e1d3;--soft:#f2ecdf}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -15,14 +15,10 @@ body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:v
 .menu a{color:var(--mut);text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:.85rem;letter-spacing:.04em}
 .menu a:hover,.menu a.on{color:var(--deep);border-bottom:2px solid var(--gold);padding-bottom:3px}
 .lang{font-family:Helvetica,Arial,sans-serif;font-size:.8rem;border:1px solid var(--line);padding:5px 12px;color:var(--deep)!important;border-bottom:1px solid var(--line)!important}
-.hero{background:linear-gradient(180deg,#f5efe2,var(--cream));padding:88px 24px 72px;text-align:center}
+.hero{background:linear-gradient(180deg,#f5efe2,var(--cream));padding:56px 24px 44px;text-align:center}
 .hero h1{font-weight:400;font-size:2.3rem;color:var(--deep);max-width:760px;margin:0 auto 14px;line-height:1.3}
-.hero .motto{color:var(--gold2);font-size:1.25rem;font-style:italic;margin-bottom:18px}
-.hero p{color:var(--mut);max-width:640px;margin:0 auto;font-family:Helvetica,Arial,sans-serif;font-size:1rem}
-.btns{margin-top:32px}
 .btn{display:inline-block;padding:14px 34px;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:.9rem;letter-spacing:.05em}
 .btn.gold{background:var(--gold);color:#fff}
-.btn.line{border:1px solid var(--gold);color:var(--gold2);margin-left:10px}
 .btn:hover{opacity:.88}
 .wrap{max-width:1020px;margin:0 auto;padding:60px 24px}
 h2.sec{font-size:1.5rem;color:var(--deep);font-weight:400;margin-bottom:10px}
@@ -31,42 +27,81 @@ h2.sec:after{content:"";display:block;width:56px;height:2px;background:var(--gol
 .big{font-size:1.18rem;line-height:1.7;max-width:780px;margin-bottom:16px}
 .big em{color:var(--gold2);font-style:normal}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:26px}
-.card{background:#fff;border:1px solid var(--line);padding:28px}
+.card{background:#fff;border:1px solid var(--line);padding:0;overflow:hidden}
+.card img{width:100%;height:200px;object-fit:cover;display:block}
+.card-body{padding:20px 24px}
 .card h3{font-weight:400;color:var(--deep);font-size:1.1rem;margin-bottom:8px}
 .card p{font-family:Helvetica,Arial,sans-serif;font-size:.92rem;color:var(--mut)}
-.band{background:var(--deep);color:#efe8da;padding:56px 24px;text-align:center}
-.band h2{font-weight:400;font-size:1.5rem;margin-bottom:12px}
-.band p{color:#c9bda9;max-width:640px;margin:0 auto 24px;font-family:Helvetica,Arial,sans-serif;font-size:.95rem}
-.bank{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:30px;margin:26px 0;max-width:640px}
-.bank p{margin-bottom:8px}
-.bank b{color:var(--deep)}
-.bank .mono{font-family:'Courier New',monospace;font-size:1.05rem;letter-spacing:.03em}
 .note{background:var(--soft);border-left:3px solid var(--gold);padding:16px 22px;font-family:Helvetica,Arial,sans-serif;font-size:.92rem;margin:22px 0;max-width:720px}
 .official{font-family:Helvetica,Arial,sans-serif;font-size:.88rem;color:var(--mut);line-height:2}
+.manager-block{display:flex;align-items:flex-start;gap:40px;margin:36px 0;background:#fff;border:1px solid var(--line);padding:36px;flex-wrap:wrap}
+.manager-block img{width:220px;height:260px;object-fit:cover;object-position:top center;border:3px solid var(--gold);flex-shrink:0}
+.manager-info h3{font-size:1.5rem;font-weight:400;color:var(--deep);margin-bottom:4px}
+.manager-info .role{color:var(--gold2);font-family:Helvetica,Arial,sans-serif;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px;display:block}
+.manager-info p{font-family:Helvetica,Arial,sans-serif;font-size:.95rem;color:var(--mut);line-height:1.7}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:26px}
+.gallery img{width:100%;height:220px;object-fit:cover;display:block;border:1px solid var(--line)}
 footer{background:#f0e9db;border-top:1px solid var(--line);color:#857a69;font-family:Helvetica,Arial,sans-serif;font-size:.8rem;text-align:center;padding:26px 24px;line-height:1.9}
 footer a{color:#6b5d43;text-decoration:none}
-@media(max-width:700px){.hero h1{font-size:1.6rem}}
+@media(max-width:700px){.hero h1{font-size:1.6rem}.manager-block{flex-direction:column}.manager-block img{width:100%;height:300px}}
 </style></head><body>
 <nav class="nav"><div class="in">
 <a class="logo" href="index.html">БЛАГОДАРЯ<b>.БГ</b></a>
 <ul class="menu"><li><a href="index.html">Home</a></li><li><a href="about.html" class="on">About</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li><li><a class="lang" href="../za-nas.html">БГ</a></li></ul>
 </div></nav>
 
-<header class="hero" style="padding:56px 24px 44px">
+<header class="hero">
 <h1>About us</h1>
 </header>
+
 <section class="wrap" style="padding-top:20px">
 <p class="big">The Blagodarya.BG Foundation ("Thank You BG") was established in <em>2008</em> by Tatiana and Dobrin Dobrevi as a charitable non-profit organisation.</p>
 <p class="big">We believe kindness is the shortest path to the heart — and that a community is strong when it keeps its spiritual roots and cares for its most vulnerable children.</p>
+
+<h2 class="sec" style="margin-top:36px">Management</h2>
+<div class="manager-block">
+  <img src="data:image/jpeg;base64,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" alt="Tatiana Dobreva — Foundation Director">
+  <div class="manager-info">
+    <h3>Tatiana Dobreva</h3>
+    <span class="role">Foundation Director</span>
+    <p>Tatiana Dobreva is co-founder and director of the Blagodarya.BG Foundation since its establishment in 2008. She leads all of the organisation's initiatives — from support for children in need to funding archaeological and spiritual projects across Bulgaria.</p>
+    <p style="margin-top:12px">Under her leadership, the foundation has provided long-term support for the Children's Home in Popovo, funded archaeological excavations at Kovachevsko Kale, and contributed to construction works on the Nativity of the Theotokos chapel.</p>
+  </div>
+</div>
+
 <h2 class="sec" style="margin-top:36px">Our goals</h2>
 <p class="sub">Preservation and dissemination of spiritual and cultural values, and support for children in need.</p>
+
 <h2 class="sec" style="margin-top:36px">Completed initiatives</h2>
 <div class="grid">
-<div class="card"><h3>Children's home — Popovo</h3><p>Support for a home for disadvantaged children.</p></div>
-<div class="card"><h3>Kovachevsko Kale</h3><p>Funding of archaeological excavations of the fortress.</p></div>
-<div class="card"><h3>Nativity of the Theotokos chapel</h3><p>Construction works on the chapel.</p></div>
+<div class="card">
+  <img src="../images/Blagodary_Dom_popovo.jpg" alt="Children's home Popovo">
+  <div class="card-body"><h3>Children's home — Popovo</h3><p>Support for a home for disadvantaged children.</p></div>
 </div>
-<div class="note">The foundation is funded entirely by donations. All funds go directly to the causes — no administrative salaries, no intermediaries.</div>
+<div class="card">
+  <img src="../images/Blagodary_Dom_popovo_edited.jpg" alt="Children's home Popovo">
+  <div class="card-body"><h3>Kovachevsko Kale</h3><p>Funding of archaeological excavations of the fortress.</p></div>
+</div>
+<div class="card">
+  <img src="../images/Blagodarya_edited.jpg" alt="Foundation activities">
+  <div class="card-body"><h3>Nativity of the Theotokos chapel</h3><p>Construction works on the chapel.</p></div>
+</div>
+</div>
+
+<h2 class="sec" style="margin-top:40px">Photos from our activities</h2>
+<div class="gallery">
+  <img src="../images/Blagodarya_Popovo_s_men_1.jpg" alt="Blagodarya Popovo">
+  <img src="../images/Blagodarya_Popovo_s_men_2.jpg" alt="Blagodarya Popovo">
+  <img src="../images/File_000_edited_1.jpg" alt="Foundation activities">
+  <img src="../images/File_000_1.jpeg" alt="Foundation activities">
+  <img src="../images/File_000_edited_2.jpg" alt="Foundation activities">
+  <img src="../images/File_000_2.jpeg" alt="Foundation activities">
+  <img src="../images/IMG_7172.jpg" alt="Foundation activities">
+  <img src="../images/109B3885.jpeg" alt="Foundation activities">
+</div>
+
+<div class="note" style="margin-top:32px">The foundation is funded entirely by donations. All funds go directly to the causes — no administrative salaries, no intermediaries.</div>
+
 <h2 class="sec" style="margin-top:36px">Official details</h2>
 <p class="official">Blagodarya.BG Foundation · UIC 175789297<br>
 Registration: case 775/2008, Sofia City Court<br>
