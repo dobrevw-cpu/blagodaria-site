@@ -1,0 +1,37 @@
+name: Fetch Images from Wix CDN
+
+on:
+  workflow_dispatch:
+
+  jobs:
+    fetch-images:
+        runs-on: ubuntu-latest
+            steps:
+                  - uses: actions/checkout@v4
+
+                        - name: Download images
+                                run: |
+                                          mkdir -p images
+                                                    curl -L -o images/BLAGODARYA_logo.png "https://static.wixstatic.com/media/6a9c09_e9f684f43d6e4382a9db2b662b240b81~mv2.png"
+                                                              curl -L -o images/BLAGODARYA_edited.jpg "https://static.wixstatic.com/media/6a9c09_b6340ae24b3343e588199418edaef147~mv2.jpg"
+                                                                        curl -L -o images/BLAGODARYA.png "https://static.wixstatic.com/media/6a9c09_d6eb955f35184c179175a86e603d648a~mv2.png"
+                                                                                  curl -L -o images/IMG_7172.jpg "https://static.wixstatic.com/media/6a9c09_39a8ca558e7a45e4ab8b402638fca6f9~mv2.jpg"
+                                                                                            curl -L -o images/Blagodarya_Popovo_1.jpg "https://static.wixstatic.com/media/6a9c09_6131a0bd51474e1eb582a512c20e1ba9~mv2.jpg"
+                                                                                                      curl -L -o images/File_000_edited_1.jpg "https://static.wixstatic.com/media/6a9c09_be741b4c012a4e93a22019d2f03aafb3~mv2.jpg"
+                                                                                                                curl -L -o images/File_000_1.jpeg "https://static.wixstatic.com/media/6a9c09_92c3b32bd5f748779e64aae037e62214~mv2.jpeg"
+                                                                                                                          curl -L -o images/Dom_popovo_edited.jpg "https://static.wixstatic.com/media/6a9c09_9003614847b1437685d1b67256e573f3~mv2.jpg"
+                                                                                                                                    curl -L -o images/Dom_popovo.jpg "https://static.wixstatic.com/media/6a9c09_414a54717fa44edebc80429b70daaf7d~mv2.jpg"
+                                                                                                                                              curl -L -o images/Blagodarya_edited.jpg "https://static.wixstatic.com/media/6a9c09_1079eadf5ad64c709bcec9fe4c434033~mv2.jpg"
+                                                                                                                                                        curl -L -o images/Blagodarya_Popovo_2.jpg "https://static.wixstatic.com/media/6a9c09_acdcbabd885c41ea96ad68331405b081~mv2.jpg"
+                                                                                                                                                                  curl -L -o images/File_000_edited_2.jpg "https://static.wixstatic.com/media/6a9c09_451ced940e5d457789ce0c97a04436b6~mv2.jpg"
+                                                                                                                                                                            curl -L -o images/File_000_2.jpeg "https://static.wixstatic.com/media/6a9c09_8923dec61c8648e1864d631f248526bc~mv2.jpeg"
+                                                                                                                                                                                      curl -L -o images/photo_109B3885.jpeg "https://static.wixstatic.com/media/6a9c09_023e75db33474b52bc500b5a7663d34a~mv2.jpeg"
+                                                                                                                                                                                                ls -la images/
+                                                                                                                                                                                                
+                                                                                                                                                                                                      - name: Commit images
+                                                                                                                                                                                                              run: |
+                                                                                                                                                                                                                        git config user.name "github-actions[bot]"
+                                                                                                                                                                                                                                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                                                                                                                                                                                                                                            git add images/
+                                                                                                                                                                                                                                                      git commit -m "Add images from blagodarya.bg Wix site" || echo "No changes"
+                                                                                                                                                                                                                                                                git push
